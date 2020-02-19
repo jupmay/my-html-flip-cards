@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .card {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s ease all;
+    border: hotpink solid;
+}
+.container .card-wrapper:hover .card {
+    transform: rotateY(180deg);
+}
+.container .card .front-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: pink;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.container .card .back-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: gold;
+    transform: rotateY(180deg); 
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.container .card .front-card h1,
+.container .card .back-card h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.container .card .front-card p,
+.container .card .back-card p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.container .card .back-card button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    border: none;
+    cursor: pointer;
+}
+.container2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container2 .card2 {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s ease all;
+    border: 2px dashed darkgrey;
+}
+.container2 .card-wrapper2:hover .card2 {
+    transform: rotateX(180deg);
+}
+.container2 .card2 .front-card2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: orangered;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.container2 .card2 .back-card2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: royalblue;
+    transform: rotateX(180deg); 
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.container2 .card2 .front-card2 h1,
+.container2 .card2 .back-card2 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.container2 .card2 .front-card2 p,
+.container2 .card2 .back-card2 p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.container2 .card2 .back-card2 button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    border: none;
+    cursor: pointer;
+}
